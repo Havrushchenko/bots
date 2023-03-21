@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Button } from "@material-tailwind/react";
+import { Button, Progress } from "@material-tailwind/react";
 import { FaRobot } from "react-icons/fa";
 
 export function Home() {
@@ -7,7 +7,8 @@ export function Home() {
         <>
             <div className="flex justify-center mt-64">
                 <div className="w-full max-w-sm">
-                    <div className="flex justify-end px-4 pt-4">
+                <div className="flex justify-center px-4 pt-4">
+                    <Progress className="w-72 mb-6" value={0} />
                     </div>
                     <div className="flex flex-col items-center">
                         <div className="flex justify-center w-24 h-24 items-center mb-6 bg-gray-100 rounded-full shadow-lg">
