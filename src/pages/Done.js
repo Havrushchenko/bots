@@ -14,16 +14,6 @@ export function Done() {
             }
         }
     };
-    const container = {
-        hidden: { opacity: 0 },
-        show: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.5,
-                delay: 0.3
-            }
-        }
-    };
     return (
         <>
             <Progress value={100} />

@@ -1,3 +1,4 @@
+import { React, useState } from 'react'
 import { Link } from "react-router-dom";
 import { Select, Option, Button, Progress } from "@material-tailwind/react";
 import { motion } from "framer-motion";
@@ -13,16 +14,40 @@ export function Category() {
             }
         }
     };
-    const container = {
-        hidden: { opacity: 0 },
-        show: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.5,
-                delay: 0.3
-            }
-        }
-    };
+
+    const options = [
+        {
+            label: "Refund",
+            value: "Refund",
+        },
+        {
+            label: "Product Details",
+            value: "Product Details",
+        },
+        {
+            label: "Product Info",
+            value: "Product Info",
+        },
+        {
+            label: "Complaint",
+            value: "Complaint",
+        },
+    ];
+
+    const actions = [
+        {
+            label: "Reply with a message",
+            value: "Reply with a message",
+        },
+        {
+            label: "Reply with a message and promt user for answer",
+            value: "Reply with a message and promt user for answer",
+        },
+        {
+            label: "Reply with a message and action",
+            value: "Reply with a message and action",
+        },
+    ];
     return (
         <>
             <Progress value={66} />
@@ -33,15 +58,14 @@ export function Category() {
                         <div class="flex flex-wrap -mx-3 mb-6">
                             <div className="flex justify-center w-80 gap-7">
                                 <Select size="md" label="Select category">
-                                    <Option>Refund</Option>
-                                    <Option>Product Details</Option>
-                                    <Option>Product Info</Option>
-                                    <Option>Complaint</Option>
+                                    {options.map((option) => (
+                                        <Option value={option.value}>{option.label}</Option>
+                                    ))}
                                 </Select>
                                 <Select size="md" label="Select action">
-                                    <Option>Reply with a message</Option>
-                                    <Option>Reply with a message and promt user for answer</Option>
-                                    <Option>Reply with a message and action</Option>
+                                {actions.map((action) => (
+                                        <Option value={action.value}>{action.label}</Option>
+                                    ))}
                                 </Select>
                             </div>
                         </div>
