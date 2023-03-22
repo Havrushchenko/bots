@@ -1,6 +1,7 @@
 import { FaRobot } from "react-icons/fa";
 import { AiOutlineUser } from "react-icons/ai";
 import { IoIosInformationCircleOutline } from "react-icons/io";
+import { Avatar } from "@material-tailwind/react";
 
 export function Nav() {
     const icons = [
@@ -28,6 +29,12 @@ export function Nav() {
                                 {icon.name}</div>
                         )
                         )}
+                        <Avatar
+                            variant="circular"
+                            alt="user 5"
+                            className="border-2 border-white hover:z-10 focus:z-10"
+                            src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1760&q=80"
+                        />
                     </div>
                 </div>
             </nav>
