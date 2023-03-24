@@ -6,7 +6,6 @@ import { Configure } from './pages/Configure';
 import { Category } from './pages/Category';
 import { Done } from './pages/Done';
 
-
 function App() {
   return (
     <>

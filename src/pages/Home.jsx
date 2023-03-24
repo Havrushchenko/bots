@@ -16,7 +16,7 @@ export function Home() {
     };
     return (
         <>
-        <Progress value={0} />;
+        <Progress value={0} />
             <motion.div variants={wrapper} initial="hidden" animate="show" className="flex justify-center mt-60">
                 <div className="w-full max-w-sm">
                     <div className="flex flex-col items-center">
