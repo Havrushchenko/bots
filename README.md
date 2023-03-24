@@ -37,5 +37,6 @@
 
   ## Contributors:
   - GitHub: https://github.com/Havrushchenko
+  -GitHub Page: https://havrushchenko.github.io/bots/
 
   This README.md is made with a [Proffesional Readme Generator](https://github.com/Havrushchenko/proffesional-readme-generator).
