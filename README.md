@@ -6,7 +6,6 @@
   - [Usage](#usage)
   - [Screenshots of Application](#screenshots-of-application)
   - [Github Links](#github-links)
-  - [Contributors](#contributors)
 
   ## Description:
   An app that creates a bot and configure bots automated replies for the following categories: Refund, Product Details, Customer Support.
@@ -34,9 +33,6 @@
 
   ## GitHub Links
   - GitHub: https://github.com/Havrushchenko/bots
-
-  ## Contributors:
-  - GitHub: https://github.com/Havrushchenko
   -GitHub Page: https://havrushchenko.github.io/bots/
 
   This README.md is made with a [Proffesional Readme Generator](https://github.com/Havrushchenko/proffesional-readme-generator).
